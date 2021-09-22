@@ -1,1 +1,0 @@
-# conornally.github.io
