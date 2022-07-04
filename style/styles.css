@@ -141,15 +141,15 @@ a img{border:0px;}
 /* WORK SECTION */
 /****************************************************/
 
-#work{margin:0px 43px; padding-top:115px;}
-#work .content{overflow:auto;}
-#work #work-thumbs li{
+#publication{margin:0px 43px; padding-top:115px;}
+#publication .content{overflow:auto;}
+#publication #publication-thumbs li{
 	list-style:none;
 	float:left;
 	margin:0px 20px 15px 0px;
 	padding:0px;
 }
-#work #work-thumbs li.last{margin:0px;}
+#publication #publication-thumbs li.last{margin:0px;}
 
 /****************************************************/
 /* CONNECT SECTION */
