@@ -107,6 +107,13 @@ a img{border:0px;}
 #experience .content{overflow:auto;}
 #experience .col-mid{margin:0px 65px;}
 
+#science{margin:0px 43px; padding-top:115px;}
+#science .col{
+	width:235px;
+	float:left;
+}
+#science .content{overflow:auto;}
+#science .col-mid{margin:0px 65px;}
 
 /****************************************************/
 /* researchgroup SECTION */
