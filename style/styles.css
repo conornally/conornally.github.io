@@ -99,6 +99,31 @@ a img{border:0px;}
 /* EXPERIENCE SECTION */
 /****************************************************/
 
+
+#starbug{margin:0px 43px; padding-top:115px;}
+#starbug .col{
+	width:235px;
+	float:left;
+}
+#starbug .content{overflow:auto;}
+#starbug .col-mid{margin:0px 65px;}
+#starbug .content{overflow:auto;}
+#starbug .content img{float:left; margin-right:40px; border:5px solid #222222;}
+#starbug .content #service-icons{margin-top:20px;}
+#starbug .content #service-icons li{
+	display:block;
+	width:108px;
+	height:108px;
+	text-indent:-9999px;
+	list-style:none;
+	float:left;
+	margin-right:20px;
+}
+
+
+
+
+
 #experience{margin:0px 43px; padding-top:115px;}
 #experience .col{
 	width:235px;
@@ -114,7 +139,18 @@ a img{border:0px;}
 }
 #science .content{overflow:auto;}
 #science .col-mid{margin:0px 65px;}
-
+#science .content{overflow:auto;}
+#science .content img{float:left; margin-right:40px; border:5px solid #222222;}
+#science .content #service-icons{margin-top:20px;}
+#science .content #service-icons li{
+	display:block;
+	width:108px;
+	height:108px;
+	text-indent:-9999px;
+	list-style:none;
+	float:left;
+	margin-right:20px;
+}
 /****************************************************/
 /* researchgroup SECTION */
 /****************************************************/
