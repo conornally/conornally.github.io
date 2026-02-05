@@ -1,0 +1,242 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: #333333;
+  /*background-image: url('images/background.gif');
+  background-image: url('images/diabaig.png');*/
+  background-image: url('images/20250804_122248.jpg');
+  background-position: top;
+  background-attachment: fixed;
+  background-size:cover;
+  /*font: 400 14px/22px 'Open Sans', Verdana, Helvetica, sans-serif;*/
+  font: 400 16px/22px 'Bree Serif', Georgia, serif;
+
+  color:#6a6969;
+  margin: 0;
+}
+
+body#test{background-image: url('images/background.gif');}
+
+p {
+  line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
+}
+
+hr {
+	display:block;
+  	background:url(images/divider.png) repeat-x;
+	border:0px;
+	height:10px;
+	width:100%;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.right {
+  float: right;
+  margin-left: 1em;
+}
+.left {
+  float: left;
+  margin-right: 1em;
+}
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .small {
+    max-width: 60%;
+    height: auto;
+  }
+}
+.caption {
+  margin-top: 0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+/* WRAP TEXT */
+.media {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+}
+.media img {
+  max-width: 40%;
+  height: auto;
+  flex-shrink: 0;
+}
+.media-text {
+  flex: 1;
+}
+
+a { 
+	color:#fa5c5c;
+	text-decoration: none;
+}
+a:hover { /*background-color: #fff6e6; */
+  text-decoration: underline;}
+
+h1, h2, h3, h4, h5 {
+  /*font-family: Tahoma, Geneva, sans-serif;*/
+  /*font-family: 'Open Sans', Verdana, Helvetica, sans-serif;*/
+  color: #5c7776;
+  line-height: 1.1em;
+}
+
+/*#CONTAINER is the rectangle that contains everything but the background!*/
+#container {
+  margin: 3em auto 300px auto;
+  width: 95%;
+	max-width: 1250px;
+	background-color: #000000d0;
+	/*background-image:url(images/body-bg.png);*/
+  color: #b8b9a1; /*FONT COLOUR*/
+  padding-bottom:10px;
+  overflow:auto;
+}
+
+
+#content {
+  padding: 10px 5% 20px 5%;
+}
+
+
+/*HEADER STYLE*/
+#header {
+	box-sizing: border-box;
+	height:auto;
+	min-height:60px;
+	width: 95%;
+	max-width: 1250px;
+	
+	background-color: #222222;
+	position: fixed;
+	top:0%;
+	padding-left:0em;
+}
+#header ul {
+  list-style-type: none;
+  padding: 0.5em 0 -0.5em 0;
+  margin: 0;
+}
+#header li {
+  font-size: 1.2em;
+  display: inline-block;
+  margin-right: 0.5em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+#header li a {
+  /*font: 400 22px/32px 'Open Sans', Verdana, Helvetica, sans-serif;*/
+  font: 400 26px/32px 'Bree Serif', Georgia, serif;
+  /*color: #5c7776;*/
+  text-decoration: none;
+  background-color: inherit;
+}
+#header li a:hover {
+  text-decoration: underline;
+}
+#header li:before {
+	content:"| ";
+}
+#header li:first-child:before {
+  content: "";
+}
+
+.link-discrete
+{
+  color: #5c7776;
+}
+
+/*POST LIST STYLE*/
+#postlistdiv ul {
+  /*font-size: 1.2em;*/
+  padding: 0;
+  list-style-type: none;
+}
+#recentpostlistdiv ul {
+  /*font-size: 1.2em;*/
+  padding: 0;
+  list-style-type: none;
+}
+.moreposts {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
+.post-list {
+	list-style:none;
+	padding: 0px;
+	margin: 0px;
+}
+.post-item 
+{
+	display: flex;
+	gap: 1.5em;
+	align-items: flex-start;
+	margin-bottom: 1.5em;
+}
+.post-item img
+{
+	max-width:20%;
+	height: auto;
+	flex-shrink: 0;
+}
+
+.post-text 
+{	
+	flex: 1;
+	font-size: 1em;
+}
+
+/*NEXT AND PREVIOUS LINKS STYLE*/
+#nextprev {
+  text-align: center;
+  margin-top: 1.4em;
+}
+
+/*DISQUS STYLE*/
+#disqus_thread {
+  margin-top: 1.6em;
+}
+
+/*FOOTER STYLE*/
+#footer {
+  font-size: 0.8em;
+  padding: 0 5% 10px 5%;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin-left: 1.5em;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.social-links img {
+  width: 24px;
+  height: 24px;
+  display: block;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;   /* THIS does the vertical alignment */
+  gap: 0.5em;
+  text-decoration: none;
+  color: inherit;
+}
