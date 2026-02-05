@@ -26,7 +26,9 @@ let footerHTML = "<hr><p>" + blogName + " is written by <a href='" + authorLink 
 
 //To do the following stuff, we want to know where we are in the posts array (if we're currently on a post page).
 let currentIndex = -1;
-let currentFilename = url.substring(url.lastIndexOf('/posts/')).slice(0,-1); 
+let currentFilename = url.substring(url.lastIndexOf('/posts/'));
+
+if(currentFilename.slice(-1)==="/") currentFilename=currentFilename.slice(0,-1);
 
 let i;
 for (i = 0; i < postdat.length; i++) {
@@ -88,7 +90,7 @@ function formatDate(i)
 function formatPostLink(i) {
   let postTitle_i = formatPostTitle(i);
   if (  postDateFormat.test ( postdat[i].folder.slice( 6,14 ) ) ) {
-    return '<a href="'+ postdat[i].folder +'/index.html">' + getyear(i) +'/'+getmonth(i)+ " \u00BB " +  formatPostTitle(i)+'</a>';
+    return '<a href="'+ postdat[i].folder +'">' + getyear(i) +'/'+getmonth(i)+ " \u00BB " +  formatPostTitle(i)+'</a>';
 
   } else {
     return '<a href="/index.html">' + "bad file format" + '</a>';
